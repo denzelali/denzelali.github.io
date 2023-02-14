@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS';
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../gifs/sunseeeet.gif);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:soft-light;
+}
+.image-overlay{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color:rgba(28, 128, 132, 0.399);
+    align-items: center;
+
+}
+nav{
+    display:inline-flex;
+    align-items:unset;
+    justify-content: space-around;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color:rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+span{
+    color:cornflowerblue;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    position: relative;
+    text-align: right;
+}
+nav ul li a:after{
+    content: '';
+    position: absolute;
+    background-color: #f9004d;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* .btn {
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: none;
+    border: 2px white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 12vh;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid cornflowerblue;
+    cursor: pointer;
+} */
+.content{
+    margin-top: 20%;
+    font-size: 30px;
+}
+h1{
+    color:white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+.content p{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+/* --------ABOUT ME------- */
+#about{
+    padding: 80px 0;
+    background-color: rgb(0, 0, 0);
+}
+p{
+    color: white;
+    text-align: justify;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    margin-right: 6vh;
+    font-size: larger;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    padding: 2vh;
+
+}
+.about-col-1 img{
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+    border-style:ridge;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    color:white;
+    font-family: Franklin Gothic Medium;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.tab-titles{
+    display: flex;
+    margin: 15px 0 30px ;
+    background-color:darkgrey;
+}
+.tab-links{
+    margin: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 2vh;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(143, 8, 143);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    font-size: 16px;
+    list-style: none;
+    margin: 10px 0;
+    text-align: left;
+}
+.tab-contents ul li span{
+    color: rgb(143, 8, 143);
+    font-size: 20px;
+}
+.tab-contents{
+    color: white;
+    display: none;
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+}
+.tab-contents.active-tab{
+    display: block;
+    margin-left: 2vh;
+}
+basic-info{
+    color: black;
+}
+language{
+    display: flex;
+}
+.language a{
+    color: white;
+    text-decoration: none;
+    font-size:xx-large;
+    border: 2px solid transparent;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: .4s;
+    margin-top: 2vh;
+    width: 60px;
+}
+
+button{
+    background-color: rgb(143, 8, 143);
+    color: white;
+    text-decoration:  none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-top: 2vh;
+    margin-bottom: -36vh;
+    width: 125px;
+}
+button:hover{
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    border: 2px solid rgb(143, 8, 143);
+    cursor: pointer;
+}
+/* -------portfolio------ */
+#portfolio {
+    padding: 40px 0;
+}
+.container{
+    background-color: rgb(189, 189, 189);
+}
+.sub-title{
+    color:black; 
+    text-align: left;
+    padding-top: 4vh;
+    text-align: center;
+}
+.hobby-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 33px;
+    margin-top: 6px;
+    font-weight: normal;
+}
+.hobby{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: palevioletred;
+    margin: 2vh;
+}
+.hobby h3{
+    color:black;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 4vh;
+}
+.hobby img{
+    width: 61vh;
+    margin: center;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.hobby p{
+    margin: 1vh;
+    font-size: 14px;
+    font-family:'Trebuchet MS';
+    font-style: normal;
+    text-align: center;
+}
+.hobby:hover img{
+    transform: scale(1.1);
+}
+/* -------CONTACT------ */
+#footer{
+    position: relative;
+    color: rgb(40, 5, 5);
+    text-align: center;
+    padding: 25px -2px;
+    justify-content: center;
+    margin-top: 4px;
+}
+#footer p{
+    color: black;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+.social{
+    padding:25px 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+}
+.social a{
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(143, 8, 143);
+    border-radius: 50%;
+    margin: 20px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    bottom: 25px;
+    position: relative;
+}
+.social a:hover{
+    transform: scale(1.3);
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(143, 8, 143);
+}
+.end{
+    padding: -30px 8px;
+    color:rgb(143, 8, 143);
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+}
